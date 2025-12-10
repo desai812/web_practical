@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Simple Info Display</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 40px;
+      text-align: center;
+    }
+
+    .info-box {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 60%;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .info-box:hover {
+      transform: scale(1.02);
+    }
+
+    img {
+      width: 200px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #007acc;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f1f9ff;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <div class="info-box">
+    <h2>Profile Overview</h2>
+    <img src="D:\web_practical\RadhaKrish1.jpg" alt="Profile Image">
+    <table>
+      <tr>
+        <th>Attribute</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Jane Doe</td>
+      </tr>
+      <tr>
+        <td>Occupation</td>
+        <td>Web Designer</td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>Mumbai, India</td>
+      </tr>
+    </table>
+  </div>
+
 </body>
 </html>
